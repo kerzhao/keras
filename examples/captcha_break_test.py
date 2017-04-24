@@ -29,8 +29,8 @@ def decode(y):
     return ''.join([characters[x] for x in y])
 
 X, y = next(gen(1))
-plt.imshow(X[0])
-plt.title(decode(y))
+#plt.imshow(X[0])
+#plt.title(decode(y))
 
 from keras.models import *
 from keras.layers import *
