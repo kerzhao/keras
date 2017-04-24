@@ -21,7 +21,7 @@ from keras.layers import *
 batch_size = 32
 num_classes = 10
 epochs = 200
-data_augmentation = True
+data_augmentation = False
 
 # The data, shuffled and split between train and test sets:
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
