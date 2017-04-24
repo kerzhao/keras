@@ -51,5 +51,5 @@ model.compile(loss='categorical_crossentropy',
               optimizer='adadelta',
               metrics=['accuracy'])
 
-model.fit_generator(gen(), samples_per_epoch=51200, nb_epoch=5,
-                    validation_data=gen(), nb_val_samples=1280)
+model.fit_generator(gen(), samples_per_epoch=2000, nb_epoch=200,
+                    validation_data=gen(), nb_val_samples=500)
