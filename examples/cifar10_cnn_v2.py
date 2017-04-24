@@ -60,15 +60,15 @@ y_test = keras.utils.to_categorical(y_test, num_classes)
 input_tensor = Input(x_train.shape[1:])
 x = input_tensor
 
-x = Conv2D(32, (3, 3), activation='relu')(x)
+x = Conv2D(32, (3, 3), padding='same', activation='relu')(x)
 x = Conv2D(32, (3, 3), activation='relu')(x)
 x = MaxPooling2D((2, 2))(x)
 
-x = Conv2D(64, (3, 3), activation='relu')(x)
+x = Conv2D(64, (3, 3), padding='same', activation='relu')(x)
 x = Conv2D(64, (3, 3), activation='relu')(x)
 x = MaxPooling2D((2, 2))(x)
 
-x = Conv2D(128, (3, 3), activation='relu')(x)
+x = Conv2D(128, (3, 3), padding='same', activation='relu')(x)
 x = Conv2D(128, (3, 3), activation='relu')(x)
 x = MaxPooling2D((2, 2))(x)
 
