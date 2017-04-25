@@ -184,6 +184,7 @@ for iteration in range(1, 200):
               epochs=1,
               validation_data=(x_val, y_val))
     model.save('addition_rnn/model_%d.h5' %iteration)
+    print (colors.fail + u'save model %d' %iteration + colors.close)
     # Select 10 samples from the validation set at random so we can visualize
     # errors.
     for i in range(10):
